@@ -114,8 +114,7 @@ The results from the notebooks demonstrate several key insights:
 - **Quality of Relations Matters**  
   The performance lift is highly dependent on the type of relational data.  
   - For the volatile NASDAQ market, the complex Wikidata relations provided a significant boost.  
-  - The simpler Sector-Industry relations were less effective.  
-  - Conversely, the more stable NYSE market benefited most from the long-term industry correlations.
+  - The simpler Sector-Industry relations were less effective.
 
 - **Strategy Affects Performance**  
   Backtesting shows that a Top-1 strategy (investing in the single best-predicted stock) often outperforms Top-5 and Top-10 strategies, indicating that the model is effective at identifying the highest-potential assets.
