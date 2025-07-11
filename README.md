@@ -59,16 +59,16 @@ Three separate notebooks are responsible for processing raw data:
 
 ### Model Training
 
-- `01_data_loading_and_metrics`: implements the data loading and evaluation functions.
-- `02_LSTM_model_definition`: LSTM model definition and training
-- `03_rank_LSTM_model_definition`: Rank-LSTM model definition and training. Used to generate and save the sequential embeddings for the final TGNN model. 
-- `04_rel_rank_LSTM_model_definition`: ReRaLSTM model definition and training, using the generated rank LSTM embeddings and relational data.
-- `05_hyperparameter_optimization`: performs a hyperparameter grid search to find the optimal configuration for the models.
+- `04_data_loading_and_metrics`: implements the data loading and evaluation functions.
+- `05_LSTM_model_definition`: LSTM model definition and training
+- `06_rank_LSTM_model_definition`: Rank-LSTM model definition and training. Used to generate and save the sequential embeddings for the final TGNN model. 
+- `07_rel_rank_LSTM_model_definition`: ReRaLSTM model definition and training, using the generated rank LSTM embeddings and relational data.
+- `07a_hyperparameter_optimization`: performs a hyperparameter grid search to find the optimal configuration for the final model.
 
 ### Experimental Evaluation
 
-- `01_backtesting_results.ipynb`: loads the pre-trained models and performs backtesting on historical stock data. It visualizes the cumulative Investment Return Ratio (IRR), comparing the performance of the models and of various investment strategies.
-- `02_explainability_analysis.ipynb`: model interpretability. It uses correlation analysis and permutation feature importance to identify the most influential features for the Rank-LSTM model.
+- `08_backtesting_results.ipynb`: loads the pre-trained models and performs backtesting on historical stock data. It visualizes the cumulative Investment Return Ratio (IRR), comparing the performance of the models and of various investment strategies.
+- `09_explainability_analysis.ipynb`: model interpretability. It uses correlation analysis and permutation feature importance to identify the most influential features for the Rank-LSTM model.
 
 ## Setup and Installation
 ### 1. Clone the Repository:
