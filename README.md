@@ -97,7 +97,7 @@ The notebooks should be run in the following order to ensure dependencies are me
 
 1. **Data Preparation Notebooks** : if not already done, run the data preparation scripts to generate all necessary feature and relation files.
 
-2. **Models Training Notebooks**: run this notebooks to train the models. The most crucial output is the sequential embedding file (e.g., `NASDAQ_rank_lstm_seq-16_unit-64_2.csv.npy`), which is required by the ReRaLSTM model (if not already downloaded like mentioned above).
+2. **Models Training Notebooks**: run these notebooks to train the models. The most crucial output is the sequential embedding file (e.g., `NASDAQ_rank_lstm_seq-16_unit-64_2.csv.npy`), which is required by the ReRaLSTM model (if not already downloaded like mentioned above).
 
 3. **Experimental Evaluation Notebooks** : after models are trained, run this notebook to load them and visualize the backtesting performance and summary plots.
 
