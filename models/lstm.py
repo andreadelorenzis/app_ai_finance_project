@@ -157,7 +157,7 @@ class LSTM:
                     best_valid_loss = avg_val_loss
                     best_valid_perf = cur_valid_perf
                     print('Better valid loss:', best_valid_loss)
-                    self.save_model(model, f'../../data/pretrain/pretrain/{self.market_name}_lstm_model.pt')
+                    # self.save_model(model, f'../../data/pretrain/pretrain/{self.market_name}_lstm_model.pt')
             
             print('Epoch:', epoch, 'Time: %.4f' % (time() - t1))
             

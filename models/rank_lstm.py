@@ -224,7 +224,7 @@ class RankLSTM:
                     best_test_gt = test_gt.copy()
                     best_test_mask = test_mask.copy()
                     print('Better valid loss:', best_valid_loss)
-                    self.save_model(model, f'../../data/pretrain/pretrain/{self.market_name}_ranklstm_model.pt')
+                    # self.save_model(model, f'../../data/pretrain/pretrain/{self.market_name}_ranklstm_model.pt')
 
             print('Epoch:', epoch, 'Time: %.4f' % (time() - t1))
 

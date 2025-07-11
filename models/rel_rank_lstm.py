@@ -337,7 +337,7 @@ class ReRaLSTM:
                 best_test_pred = copy.copy(cur_test_pred)
                 best_test_mask = copy.copy(cur_test_mask)
                 print('Better valid loss:', best_valid_loss)
-                self.save_model(self.model, f'../../data/pretrain/pretrain/{self.market_name}_{self.relation_name}_reralstm_model.pt')
+                # self.save_model(self.model, f'../../data/pretrain/pretrain/{self.market_name}_{self.relation_name}_reralstm_model.pt')
             
             t4 = time()
             print('epoch:', i, ('time: %.4f ' % (t4 - t1)))
