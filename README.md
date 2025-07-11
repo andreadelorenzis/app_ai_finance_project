@@ -1,6 +1,6 @@
 # Temporal Relational Ranking for Stock Prediction
 
-This project is a Python implementation and analysis of the models presented in the paper **"Temporal Relational Ranking for Stock Prediction"** by Fuli Feng et al. The core objective is to move beyond simple price prediction and instead formulate stock selection as a ranking problem. The models leverage not only the historical time-series data of individual stocks but also the complex relationships between them to improve prediction accuracy using Graph Neural Networks. 
+This project is a Python implementation and analysis of the models presented in the paper [Temporal Relational Ranking for Stock Prediction](https://arxiv.org/pdf/1809.09441) by Fuli Feng et al. The core objective is to move beyond simple price prediction and instead formulate stock selection as a ranking problem. The models leverage not only the historical time-series data of individual stocks but also the complex relationships between them to improve prediction accuracy using Graph Neural Networks. 
 
 ## Models Implemented
 
