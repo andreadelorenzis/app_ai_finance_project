@@ -69,8 +69,8 @@ Three separate notebooks are responsible for processing raw data:
 
 ### Experimental Evaluation
 
-- `backtesting.ipynb`: loads the pre-trained models and performs backtesting on historical stock data. It visualizes the cumulative Investment Return Ratio (IRR), comparing the performance of the models and of various investment strategies.
-- `explainability_analysis.ipynb`: model interpretability. It uses correlation analysis and permutation feature importance to identify the most influential features for the Rank-LSTM model.
+- `01_backtesting_results.ipynb`: loads the pre-trained models and performs backtesting on historical stock data. It visualizes the cumulative Investment Return Ratio (IRR), comparing the performance of the models and of various investment strategies.
+- `02_explainability_analysis.ipynb`: model interpretability. It uses correlation analysis and permutation feature importance to identify the most influential features for the Rank-LSTM model.
 
 ## Setup and Installation
 ### 1. Clone the Repository:
