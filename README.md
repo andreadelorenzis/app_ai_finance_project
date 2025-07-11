@@ -21,7 +21,7 @@ All data (Sequential data, Industry and Wiki relation) are under the `data/` fol
 Historical (30 years) End-of-day data (i.e., open, high, low, close prices and trading volume) of more than 8,000 stocks traded in US stock market collected from Google Finance.
 
 **Processed data:** `data/2013-01-01`
-Is the dataset used to conducted the experiments.
+Is the dataset used to conduct the experiments.
 
 ### Relation Data
 To get the relation data, run the following command in the `data/` folder:
