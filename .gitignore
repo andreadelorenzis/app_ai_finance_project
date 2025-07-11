@@ -2,6 +2,6 @@ data/relation
 data/pretrain
 data/pretrain.tar.gz
 data/pretrain.tar.gz:Zone.Identifier
-.ipynb_checkpoints
+.ipynb_checkpoints/
 models/.ipynb_checkpoints
 notebooks/.ipynb_checkpoints
