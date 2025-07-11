@@ -13,28 +13,6 @@ This model enhances the baseline by incorporating a pairwise ranking loss into t
 ### Relational-Ranking LSTM (ReRa-LSTM)
 The most advanced model, which uses pre-computed embeddings from the Rank-LSTM and combines them with explicit relational data. It uses an attention-like mechanism (Temporal Graph Convolution) to weigh the influence of related stocks, aiming to make more informed, context-aware predictions.
 
-## Data and Models
-All data (Sequential data, Industry and Wiki relation) are under the `data/` folder.
-
-### Sequential Data
-**Raw data:** `data/google_finance` 
-Historical (30 years) End-of-day data (i.e., open, high, low, close prices and trading volume) of more than 8,000 stocks traded in US stock market collected from Google Finance.
-
-**Processed data:** `data/2013-01-01`
-Is the dataset used to conduct the experiments.
-
-### Relation Data
-To get the relation data, run the following command in the `data/` folder:
-```
-tar zxvf relation.tar.gz
-```
-
-**Industry Relation**
-Under the sector_industry folder, there are row relation file and binary encoding file (.npy) storing the industry relations between stocks in NASDAQ and NYSE.
-
-**Wiki Relation**
-Under the wikidata folder, there are row relation file and binary encoding file (.npy) storing the Wiki relations between stocks in NASDAQ and NYSE.
-
 ## Project Structure
 
 - `data`
@@ -49,6 +27,7 @@ Under the wikidata folder, there are row relation file and binary encoding file 
 	- `lstm.py`: baseline LSTM model and trainer
 	- `rank_lstm.py`: Rank-LSTM model and trainer
 	- `rel_rank_lstm.py`: ReRa-LSTM model and trainer
+
 
 ## Notebooks Overview
 
@@ -71,6 +50,28 @@ Three separate notebooks are responsible for processing raw data:
 
 - `08_backtesting_results.ipynb`: loads the pre-trained models and performs backtesting on historical stock data. It visualizes the cumulative Investment Return Ratio (IRR), comparing the performance of the models and of various investment strategies.
 - `09_explainability_analysis.ipynb`: model interpretability. It uses correlation analysis and permutation feature importance to identify the most influential features for the Rank-LSTM model.
+
+## Data and Models
+All data (Sequential data, Industry and Wiki relation) are under the `data/` folder.
+
+### Sequential Data
+**Raw data:** `data/google_finance` 
+Historical (30 years) End-of-day data (i.e., open, high, low, close prices and trading volume) of more than 8,000 stocks traded in US stock market collected from Google Finance.
+
+**Processed data:** `data/2013-01-01`
+Is the dataset used to conduct the experiments.
+
+### Relation Data
+To get the relation data, run the following command in the `data/` folder:
+```
+tar zxvf relation.tar.gz
+```
+
+**Industry Relation**
+Under the sector_industry folder, there are row relation file and binary encoding file (.npy) storing the industry relations between stocks in NASDAQ and NYSE.
+
+**Wiki Relation**
+Under the wikidata folder, there are row relation file and binary encoding file (.npy) storing the Wiki relations between stocks in NASDAQ and NYSE.
 
 ## Setup and Installation
 ### 1. Clone the Repository:
