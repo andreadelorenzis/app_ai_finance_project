@@ -56,16 +56,16 @@ Under the wikidata folder, there are row relation file and binary encoding file 
 Three separate notebooks are responsible for processing raw data:
 
 - `01_close_prices_data_preparation.ipynb`: Processes raw price data.
-- `02_sector_relation_data`: Creates the sector/industry relational tensor.
-- `03_wiki_relation_data`: Creates the Wikidata-based relational tensor.
+- `02_sector_relation_data.ipynb`: Creates the sector/industry relational tensor.
+- `03_wiki_relation_data.ipynb`: Creates the Wikidata-based relational tensor.
 
 ### Model Training
 
-- `04_data_loading_and_metrics`: implements the data loading and evaluation functions.
-- `05_LSTM_model_definition`: LSTM model definition and training
-- `06_rank_LSTM_model_definition`: Rank-LSTM model definition and training. Used to generate and save the sequential embeddings for the final TGNN model. 
-- `07_rel_rank_LSTM_model_definition`: ReRaLSTM model definition and training, using the generated rank LSTM embeddings and relational data.
-- `07a_hyperparameter_optimization`: performs a hyperparameter grid search to find the optimal configuration for the final model.
+- `04_data_loading_and_metrics.ipynb`: implements the data loading and evaluation functions.
+- `05_LSTM_model_definition.ipynb`: LSTM model definition and training
+- `06_rank_LSTM_model_definition.ipynb`: Rank-LSTM model definition and training. Used to generate and save the sequential embeddings for the final TGNN model. 
+- `07_rel_rank_LSTM_model_definition.ipynb`: ReRaLSTM model definition and training, using the generated rank LSTM embeddings and relational data.
+- `07a_hyperparameter_optimization.ipynb`: performs a hyperparameter grid search to find the optimal configuration for the final model.
 
 ### Experimental Evaluation
 
